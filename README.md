@@ -72,9 +72,7 @@ The `Depth` class implements the following steps:
 2. **Grayscale Conversion**: Converts the images to **grayscale**.
 3. **Disparity Map Calculation**: Computes the disparity map using `cv2.StereoSGBM_create`.
 4. **Depth Map Calculation**: The disparity map is transformed into a depth map using the formula:  
-   \[
-   \text{depth} = \frac{\text{focal\_length} \times \text{baseline}}{\text{disparity}}
-   \]
+`depth = (focal_length × baseline) / disparity`
 5. **Normalization & Visualization**: The depth map is **normalized** and displayed for clear visual interpretation.
 
 ---
